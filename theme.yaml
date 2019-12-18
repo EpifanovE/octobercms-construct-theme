@@ -1,0 +1,7 @@
+name: EEV Construct
+description: ''
+author: Evgeny Epifanov
+homepage: 'https://eecode.com'
+code: ''
+require:
+  - EEV.Blog
