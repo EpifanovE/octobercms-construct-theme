@@ -1,5 +1,6 @@
-//@import "vendor/bs-custom";
-//@import "../../node_modules/bootstrap/scss/bootstrap";
-//@import "vendor/fa";
-
 @import "polo/style";
+
+.bg-overlay[data-style="13"] {
+  background: linear-gradient(90deg, #0090f0 0%, #5d08e6 100%);
+  opacity: .5;
+}
