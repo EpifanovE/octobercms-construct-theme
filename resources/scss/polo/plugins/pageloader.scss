@@ -86,6 +86,7 @@ body:not(.no-page-loader) .animsition-overlay {
   animation-name: fade-out;
 }
 
+
 .loader .ball-grid-pulse>div,
 .loader .square-spin>div,
 .loader .ball-rotate>div,
@@ -107,16 +108,16 @@ body:not(.no-page-loader) .animsition-overlay {
 .loader .pacman>div:nth-child(5),
 .loader .pacman>div:nth-child(6),
 .loader .ball-grid-beat>div {
-  background-color: #2250fc;
+  background-color: #c23616;
 }
 
 .loader .ball-scale-ripple-multiple>div {
-  border: 2px solid #2250fc;
+  border: 2px solid #c23616;
 }
 
 .loader .pacman>div:first-of-type,
 .loader .pacman>div:nth-child(2) {
-  border-color: #2250fc transparent #2250fc #2250fc;
+  border-color: #c23616 transparent #c23616 #c23616;
 }
 
 .loader body[data-icon]::before {
@@ -198,7 +199,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .ball-grid-pulse>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -241,7 +242,7 @@ body:not(.no-page-loader) .animsition-overlay {
   width: 15px;
   height: 15px;
   margin: 2px;
-  background-color: #2250fc;
+  background-color: #c23616;
   border-radius: 100%;
 }
 
@@ -313,7 +314,7 @@ body:not(.no-page-loader) .animsition-overlay {
   position: absolute;
   top: -5px;
   left: -5px;
-  background-color: #2250fc;
+  background-color: #c23616;
   animation: cube-transition 1.6s 0s infinite ease-in-out;
 }
 
@@ -355,7 +356,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .ball-zig-zag>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -496,7 +497,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .line-scale>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   width: 4px;
   height: 35px;
   border-radius: 2px;
@@ -535,7 +536,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .ball-scale-multiple>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   border-radius: 100%;
   position: absolute;
   left: -30px;
@@ -553,7 +554,7 @@ body:not(.no-page-loader) .animsition-overlay {
   height: 15px;
   border-radius: 100%;
   margin: 2px;
-  background-color: #2250fc;
+  background-color: #c23616;
   display: inline-block;
 }
 
@@ -620,7 +621,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .line-scale-pulse-out-rapid>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   width: 4px;
   height: 35px;
   border-radius: 2px;
@@ -754,7 +755,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .ball-spin-fade-loader>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -834,7 +835,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .line-spin-fade-loader>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   border-radius: 2px;
   margin: 2px;
   animation-fill-mode: both;
@@ -848,9 +849,9 @@ body:not(.no-page-loader) .animsition-overlay {
   width: 0;
   height: 0;
   border-right: 25px solid transparent;
-  border-top: 25px solid #2250fc;
-  border-left: 25px solid #2250fc;
-  border-bottom: 25px solid #2250fc;
+  border-top: 25px solid #c23616;
+  border-left: 25px solid #c23616;
+  border-bottom: 25px solid #c23616;
   border-radius: 25px;
   position: relative;
   left: -30px;
@@ -989,7 +990,7 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .ball-grid-beat>div {
-  background-color: #2250fc;
+  background-color: #c23616;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -1017,7 +1018,7 @@ body:not(.no-page-loader) .animsition-overlay {
   -moz-border-radius: 200px 0 0 200px;
   -webkit-border-radius: 200px;
   border-radius: 200px 0 0 200px;
-  border: 6px solid #2250fc;
+  border: 6px solid #c23616;
   position: relative;
 }
 
@@ -1025,7 +1026,7 @@ body:not(.no-page-loader) .animsition-overlay {
   width: 6px;
   height: 6px;
   display: block;
-  background: #2250fc;
+  background: #c23616;
   position: absolute;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1251,7 +1252,7 @@ body:not(.no-page-loader) .animsition-overlay {
 .loader .line-scale-pulse-out-rapid>div,
 .loader .line-scale>div,
 .loader .square-spin>div {
-  background: #2250fc;
+  background: #c23616;
 }
 
 @-webkit-keyframes single9anim {
@@ -1302,17 +1303,17 @@ body:not(.no-page-loader) .animsition-overlay {
 }
 
 .loader .ball-scale-ripple-multiple>div {
-  border: 2px solid #2250fc;
+  border: 2px solid #c23616;
 }
 
 .loader .pacman>div:nth-child(3),
 .loader .pacman>div:nth-child(4),
 .loader .pacman>div:nth-child(5),
 .loader .pacman>div:nth-child(6) {
-  background-color: #2250fc;
+  background-color: #c23616;
 }
 
 .loader .pacman>div:first-of-type,
 .loader .pacman>div:nth-child(2) {
-  border-color: #2250fc transparent #2250fc #2250fc;
+  border-color: #c23616 transparent #c23616 #c23616;
 }

@@ -10,11 +10,7 @@ description = "Main layout"
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Starter Template · Bootstrap</title>
 
-    <link href="{{ 'assets/css/pageloader.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/css/plugins.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/css/styles.min.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/css/responsive.css'|theme }}" rel="stylesheet">
-    {% styles %}
+    <link href="{{ 'assets/css/pageloader.min.css'|theme }}" rel="stylesheet">
 
     <!-- Favicons -->
 <!--    <link rel="apple-touch-icon" href="{{ 'assets/images/favicons/apple-touch-icon.png'|theme }}" sizes="180x180">-->
@@ -26,7 +22,7 @@ description = "Main layout"
 <!--    <meta name="msapplication-config" content="{{ 'assets/images/favicons/browserconfig.xml'|theme }}">-->
 
 </head>
-<body data-animation-in="fadeIn"  data-animation-out="fadeOut" data-icon="2">
+<body data-animation-in="fadeIn" data-animation-out="fadeOut" data-icon="2">
 <div class="body-inner">
     <div id="topbar" class="topbar-transparent topbar-fullwidth dark d-none d-xl-block d-lg-block">
         <div class="container">
@@ -137,7 +133,7 @@ description = "Main layout"
                 </div>
             </div>
             <div class="scrolldown-animation" id="scroll-down">
-                <a class="scroll-to" href="#easy-fast"><img src="{{ 'assets/images/scrolldown.png'|theme }}" alt="">
+                <a class="scroll-to" href="#counters"><img src="{{ 'assets/images/scrolldown.png'|theme }}" alt="">
                 </a>
             </div>
         </div>
@@ -146,7 +142,7 @@ description = "Main layout"
     </div>
 
     <!-- COUNTERS -->
-    <section class="background-grey">
+    <section id="counters" class="background-grey front-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -156,10 +152,12 @@ description = "Main layout"
                                 <i class="fas fa-3x fa-code"></i>
                             </a>
                         </div>
-                        <div class="counter bold" style="color:#2250fc;font-family:'Oswald',sans-serif;">
-                            <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true">88000</span>
+                        <div class="counter bold">
+                            <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true" class="counter__digits">
+                                88000
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
                     </div>
                 </div>
 
@@ -170,8 +168,12 @@ description = "Main layout"
                                 <i class="fas fa-3x fa-coffee"></i>
                             </a>
                         </div>
-                        <div class="counter bold" style="color:#2250fc;font-family:'Oswald',sans-serif;"> <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true">88000</span> </div>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                        <div class="counter bold">
+                            <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true" class="counter__digits">
+                                88000
+                            </span>
+                        </div>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
                     </div>
                 </div>
 
@@ -182,8 +184,12 @@ description = "Main layout"
                                 <i class="fas fa-3x fa-rocket"></i>
                             </a>
                         </div>
-                        <div class="counter bold" style="color:#2250fc;font-family:'Oswald',sans-serif;"> <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true">88000</span> </div>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                        <div class="counter bold">
+                            <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true" class="counter__digits">
+                                88000
+                            </span>
+                        </div>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
                     </div>
                 </div>
 
@@ -194,17 +200,20 @@ description = "Main layout"
                                 <i class="fas fa-3x fa-smile"></i>
                             </a>
                         </div>
-                        <div class="counter bold" style="color:#2250fc;font-family:'Oswald',sans-serif;"> <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true">88000</span> </div>
-                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                        <div class="counter bold">
+                            <span data-speed="3500" data-refresh-interval="50" data-to="88000" data-from="0" data-seperator="true" class="counter__digits">
+                                88000
+                            </span>
+                        </div>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
                     </div>
-                    <div class
                 </div>
             </div>
         </div>
     </section>
     <!-- end: COUNTERS -->
 
-    <section id="section1" class="p-t-150 p-b-150">
+    <section id="section1" class="front-section">
         <div class="container">
             <div class="row">
                     <div class="col-lg-6">
@@ -225,13 +234,18 @@ description = "Main layout"
             </div>
     </section>
 
-    <section class="background-grey">
-        <div class="container">
-            <div class="heading-text heading-section" style="margin-bottom: 70px;">
-                <h2>Наши услуги</h2>
-                <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span>
-            </div>
+    <section class="background-grey front-section">
 
+        <div class="container front-section__header">
+            <div class="row heading-text heading-section">
+                <div class="col-12">
+                    <h2>Наши услуги</h2>
+                    <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
             <div class="row">
                 <div class="col-lg-4 animated fadeInUp visible" data-animate="fadeInUp" data-animate-delay="0">
                     <div class="icon-box effect medium border small">
@@ -321,16 +335,18 @@ description = "Main layout"
 
     </section>
 
-    <section id="section2">
+    <section id="section2" class="front-section">
 
-        <div class="container">
-            <div class="heading-text heading-section" style="margin-bottom: 90px;">
-                <h2>Типовые проекты</h2>
-                <span class="lead">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</span>
+        <div class="container front-section__header">
+            <div class="row">
+                <div class="col-12 heading-text heading-section">
+                    <h2>Типовые проекты</h2>
+                    <span class="lead">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</span>
+                </div>
             </div>
         </div>
 
-        <div class="container" style="margin-bottom: 70px;">
+        <div class="container">
             <div class="row">
                 <!-- Item Start -->
                 <div class="col-12 col-md-4">
@@ -350,8 +366,11 @@ description = "Main layout"
                                 <span class="text-theme ml-1 mr-1">/</span>
                                 <span>4 комнаты</span>
                             </p>
-                            <p class="lead">15 458 000 рублей.</p>
-                            <a href="#" class="btn btn-primary btn-reveal">
+                            <p class="lead mb-0">15 458 000 рублей.</p>
+
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="#" class="btn btn-cta btn-outline btn-reveal mb-0">
                                 <span>Подробнее</span>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -378,8 +397,10 @@ description = "Main layout"
                                 <span class="text-theme ml-1 mr-1">/</span>
                                 <span>4 комнаты</span>
                             </p>
-                            <p class="lead">15 458 000 рублей.</p>
-                            <a href="#" class="btn btn-primary btn-reveal">
+                            <p class="lead mb-0">15 458 000 рублей.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="#" class="btn btn-cta btn-outline btn-reveal mb-0">
                                 <span>Подробнее</span>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -406,8 +427,10 @@ description = "Main layout"
                                 <span class="text-theme ml-1 mr-1">/</span>
                                 <span>4 комнаты</span>
                             </p>
-                            <p class="lead">15 458 000 рублей.</p>
-                            <a href="#" class="btn btn-primary btn-reveal">
+                            <p class="lead mb-0">15 458 000 рублей.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="#" class="btn btn-cta btn-outline btn-reveal mb-0">
                                 <span>Подробнее</span>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -419,20 +442,28 @@ description = "Main layout"
             </div>
         </div>
 
-        <div class="container text-center">
-            <a href="#" class="btn btn-outline btn-dark">Все проекты</a>
+        <div class="container text-center front-section__footer">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="btn btn-outline btn-dark">Все проекты</a>
+                </div>
+            </div>
         </div>
 
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="pb-0 background-dark text-light">
-        <div class="container" style="margin-bottom: 70px;">
-            <div class="heading-text heading-section">
-                <h2>Выполненные проекты</h2>
-                <span class="lead">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</span>
+    <section class="front-section" style="background-color: #2f3640;">
+
+        <div class="container front-section__header">
+            <div class="row">
+                <div class="col-12 heading-text heading-section">
+                    <h2 class="text-white">Выполненные проекты</h2>
+                    <span class="lead text-grey">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</span>
+                </div>
             </div>
         </div>
+
         <div class="portfolio">
             <!-- Portfolio Items -->
             <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="0">
@@ -563,72 +594,95 @@ description = "Main layout"
             <!-- end: Portfolio Items -->
 
         </div>
+
+        <div class="container text-center front-section__footer">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="btn btn-outline btn-light">Все проекты</a>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- end: PORTFOLIO -->
 
-    <section class="background-pattern" style="background-image: url( {{ 'assets/images/overlay-pattern/cubes.png'|theme }})">
+    <section class="background-pattern front-section" style="background-image: url( {{ 'assets/images/overlay-pattern/cubes.png'|theme }} )">
 
-        <div class="container">
-            <div class="heading-text heading-section text-center">
-                <h2>Что говорят наши клиенты</h2>
-                <p class="lead">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-            </div>
-            <hr class="space">
-            <div class="carousel equalize testimonial testimonial-box" data-margin="30" data-arrows="false" data-items="2" data-equalize-item=".testimonial-item">
-
-                <!-- Testimonials item -->
-                <div class="testimonial-item">
-                    <img src="{{ 'assets/images/blog/author.jpg'|theme }}" alt="">
-                    <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                    <span>Alan Monre</span>
-                    <span>CEO, Square Software</span>
+        <div class="container front-section__header">
+            <div class="row">
+                <div class="col-12 heading-text heading-section text-center">
+                    <h2>Что говорят наши клиенты</h2>
+                    <p class="lead mb-0">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
                 </div>
-                <!-- end: Testimonials item-->
-
-                <!-- Testimonials item -->
-                <div class="testimonial-item">
-                    <img src="{{ 'assets/images/blog/author2.jpg'|theme }}" alt="">
-                    <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                    <span>Alan Monre</span>
-                    <span>CEO, Square Software</span>
-                </div>
-                <!-- end: Testimonials item-->
-
-                <!-- Testimonials item -->
-                <div class="testimonial-item">
-                    <img src="{{ 'assets/images/blog/author3.jpg'|theme }}" alt="">
-                    <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-                    <span>Alan Monre</span>
-                    <span>CEO, Square Software</span>
-                </div>
-                <!-- end: Testimonials item-->
-
-                <!-- Testimonials item -->
-                <div class="testimonial-item">
-                    <img src="images/team/10.jpg" alt="">
-                    <p>Art is the only serious thing in the world. And the artist is the only person who is never serious.</p>
-                    <span>Resa Smith</span>
-                    <span>Developer @Apple</span>
-                </div>
-                <!-- end: Testimonials item-->
-
-                <!-- Testimonials item -->
-                <div class="testimonial-item">
-                    <img src="images/team/11.jpg" alt="">
-                    <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-                    <span>Ariol Perry</span>
-                    <span>Creative Designer</span>
-                </div>
-                <!-- end: Testimonials item-->
-
             </div>
         </div>
-        <div class="triangle-divider-bottom"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="carousel equalize testimonial testimonial-box" data-margin="30" data-arrows="false" data-items="2" data-equalize-item=".testimonial-item">
+
+            <!-- Testimonials item -->
+            <div class="testimonial-item">
+                <img src="{{ 'assets/images/blog/author.jpg'|theme }}" alt="">
+                <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
+                <span>Alan Monre</span>
+                <span>CEO, Square Software</span>
+            </div>
+            <!-- end: Testimonials item-->
+
+            <!-- Testimonials item -->
+            <div class="testimonial-item">
+                <img src="{{ 'assets/images/blog/author2.jpg'|theme }}" alt="">
+                <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
+                <span>Alan Monre</span>
+                <span>CEO, Square Software</span>
+            </div>
+            <!-- end: Testimonials item-->
+
+            <!-- Testimonials item -->
+            <div class="testimonial-item">
+                <img src="{{ 'assets/images/blog/author3.jpg'|theme }}" alt="">
+                <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
+                <span>Alan Monre</span>
+                <span>CEO, Square Software</span>
+            </div>
+            <!-- end: Testimonials item-->
+
+            <!-- Testimonials item -->
+            <div class="testimonial-item">
+                <img src="images/team/10.jpg" alt="">
+                <p>Art is the only serious thing in the world. And the artist is the only person who is never serious.</p>
+                <span>Resa Smith</span>
+                <span>Developer @Apple</span>
+            </div>
+            <!-- end: Testimonials item-->
+
+            <!-- Testimonials item -->
+            <div class="testimonial-item">
+                <img src="images/team/11.jpg" alt="">
+                <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
+                <span>Ariol Perry</span>
+                <span>Creative Designer</span>
+            </div>
+            <!-- end: Testimonials item-->
+
+        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center front-section__footer">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="btn btn-outline btn-dark">Все отзывы</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- PARALLAX -->
-    <section class="text-center text-light p-t-150 p-b-150" data-bg-parallax="{{ 'assets/images/demo/2.jpg'|theme }}">
-        <div class="bg-overlay" data-style="13"></div>
+    <section class="text-center text-light front-section" data-bg-parallax="{{ 'assets/images/demo/2.jpg'|theme }}">
+        <div class="bg-overlay" data-style="14"></div>
         <div class="container">
             <div class="heading-text heading-section text-center m-b-40">
                 <h2>Оставьте заявку</h2>
@@ -717,6 +771,10 @@ description = "Main layout"
 </div>
 
 <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+<link href="{{ 'assets/css/styles.min.css'|theme }}" rel="stylesheet">
+<link href="{{ 'assets/css/responsive.css'|theme }}" rel="stylesheet">
+{% styles %}
 
 <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
 <script src="{{ 'assets/js/plugins.js'|theme }}"></script>

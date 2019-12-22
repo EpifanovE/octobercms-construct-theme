@@ -52,7 +52,22 @@ gulp.task('scss:main', function () {
         .pipe(gulp.dest(assetsPath + 'css'));
 });
 
-gulp.task('scss', gulp.parallel('scss:top', 'scss:main'));
+gulp.task('scss:pageloader', function () {
+    return gulp.src([
+        'resources/scss/pageloader.scss',
+    ])
+        .pipe(gulpif(!prod, sourcemaps.init()))
+        .pipe(sass({
+            noCache: true,
+            style: 'compressed',
+            includePaths: []
+        }))
+        .pipe(concat('pageloader.min.css'))
+        .pipe(gulpif(!prod, sourcemaps.write('.')))
+        .pipe(gulp.dest(assetsPath + 'css'));
+});
+
+gulp.task('scss', gulp.parallel('scss:top', 'scss:main', 'scss:pageloader'));
 
 gulp.task('fonts', gulp.series(function () {
     return gulp.src([

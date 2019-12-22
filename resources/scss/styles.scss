@@ -1,6 +1,34 @@
+@import "bs-vars";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/animate.css/animate";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid";
+
 @import "polo/style";
 
 .bg-overlay[data-style="13"] {
-  background: linear-gradient(90deg, #0090f0 0%, #5d08e6 100%);
-  opacity: .5;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  opacity: .8;
 }
+
+.bg-overlay[data-style="14"] {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  opacity: .95;
+}
+
+.counter {
+  &__digits {
+    font-family: $font-headings;
+    color: $color-theme;
+  }
+}
+
+.search-form input.form-control:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+@import "blocks/front-section";
