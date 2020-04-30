@@ -45,7 +45,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uncss": "^1.0.6",
     "gulp-zip": "^4.1.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazyload": "^2.0.0-beta.2",
     "magnific-popup": "^1.1.0",
     "owl.carousel": "^2.3.4",
